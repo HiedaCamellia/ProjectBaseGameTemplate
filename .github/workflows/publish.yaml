@@ -35,7 +35,7 @@ jobs:
         id: publish_nuget
         run: |
           # build the package
-          dotnet build Chickensoft.GodotGameTemplate.csproj -c Release
+          dotnet build HiedaCamellia.GodotGameTemplate.csproj -c Release
           
           # find the built nuget package
           nuget_package=$(find . -name "HiedaCamellia.GodotGame.*.nupkg")
