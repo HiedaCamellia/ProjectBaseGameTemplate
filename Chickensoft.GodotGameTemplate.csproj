@@ -4,22 +4,22 @@
     <OutputPath>./nupkg</OutputPath>
 
     <PackageType>Template</PackageType>
-    <PackageId>Chickensoft.GodotGame</PackageId>
+    <PackageId>HiedaCamellia.ProjectBaseGame</PackageId>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageTags>godot;c#;chickensoft;style;formatting;editorconfig</PackageTags>
+    <PackageTags>godot;c#;chickensoft;hiedacamellia;style;formatting;editorconfig</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/chickensoft-games/GodotGameTemplate</PackageProjectUrl>
-    <PackageAuthor>Chickensoft</PackageAuthor>
+    <PackageProjectUrl>https://github.com/HiedaCamellia/ProjectBaseGameTemplate</PackageProjectUrl>
+    <PackageAuthor>HiedaCamellia</PackageAuthor>
 
-    <Title>GodotGame</Title>
-    <Version>1.6.36</Version>
+    <Title>ProjectBaseGame</Title>
+    <Version>0.0.1</Version>
     <Description>C# game template for Godot 4 with debug launch configurations, testing (locally and on CI/CD), code coverage, dependency update checks, and spell check working out-of-the-box!</Description>
-    <Copyright>© 2024 Chickensoft</Copyright>
-    <Company>Chickensoft</Company>
+    <Copyright>© 2025 HiedaCamellia</Copyright>
+    <Company>HiedaCamellia</Company>
 
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/chickensoft-games/GodotGameTemplate</RepositoryUrl>
+    <RepositoryUrl>https://github.com/HiedaCamellia/ProjectBaseGameTemplate</RepositoryUrl>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <NoBuild>true</NoBuild>
@@ -32,6 +32,7 @@
 
   <ItemGroup>
     <Content Include=".template.config/template.json" Pack="true" PackagePath=".template.config/template.json" />
+    <Content Include=".template.config\templatestrings.zh-CN.json" />
     <Content Include="src/**/*" Pack="true" PackagePath="src" Exclude="src/CONTRIBUTING.md" />
     <Content Remove="src/.git/" />
     <None Include="icon.png" Pack="true" PackagePath="" />
