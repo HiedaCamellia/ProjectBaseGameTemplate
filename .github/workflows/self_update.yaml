@@ -54,7 +54,7 @@ jobs:
         uses: KageKirin/get-csproj-version@v1.0.0
         id: current-version
         with:
-          file: Chickensoft.GodotGameTemplate.csproj
+          file: HiedaCamellia.GodotGameTemplate.csproj
           xpath: /Project/PropertyGroup/Version
 
       - name: 🧮 Compute Next Version
@@ -76,7 +76,7 @@ jobs:
         if: steps.changes.outputs.changed == 1
         uses: vers-one/dotnet-project-version-updater@v1.3
         with:
-          file: "Chickensoft.GodotGameTemplate.csproj"
+          file: "HiedaCamellia.GodotGameTemplate.csproj"
           version: ${{ steps.next-version.outputs.version }}
 
       - name: ✍️ Commit Changes
